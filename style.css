@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    animation:fadeIn ease 3s;
+    font-family: 'Noto Sans JP',sans-serif;
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+main{
+    text-align: center;
+    padding: 10px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.title-sub{
+    font-size: 30px;
+}
+
+.search{
+    background-color: gray;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+form p{
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.factor{
+    text-align: left;
+    padding-left: 25%;
+}
+
+input{
+    padding: 5px;
+}
+
+button{
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+select{
+    padding: 5px;
+}
+
+#temp{
+    width: 50px;
+}
+
+.result{
+    background-color: yellow;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.predict{
+    font-size: 24px;
+}
