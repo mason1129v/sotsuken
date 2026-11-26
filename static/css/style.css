@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    animation:fadeIn ease 3s;
+    font-family: 'Noto Sans JP',sans-serif;
+    background-image: url(./static/images/bg02-baseball.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+main{
+    text-align: center;
+    padding: 10px;
+}
+/* title - PREdict BALL -  */
+.title-gp{
+    background: linear-gradient(135deg, rgba(228, 192, 145, 0.85), rgba(205, 162, 110, 0.85));    padding: 20px 10px;
+    border: 5px double #6c3524;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.5),
+                0 6px 14px rgba(205, 134, 63,0.6);
+}
+.title{
+    font: 100px fantasy;
+    color: saddlebrown;
+    -webkit-text-stroke: 4px moccasin;
+    paint-order: stroke fill;
+    text-shadow: 
+        -5px -5px 0 saddlebrown,
+        5px -5px 0 saddlebrown,   
+        -5px 5px 0 saddlebrown,
+        5px 5px 0 saddlebrown,
+        0 -5px 0 saddlebrown,
+        0 5px 0 saddlebrown,
+        -5px 0 0 saddlebrown,
+        5px 0 0 saddlebrown;
+    text-decoration: underline saddlebrown;
+    letter-spacing: 7px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.title-sub{
+    font-size: 18px;
+    font-family: "YuGothic", sans-serif;
+    font-weight: 500;
+    color: #cd5e3c;
+    text-shadow: 1px 1px 2px #fff9f5;
+    line-height: 1.2;
+}
+
+/* - GAME SEARCH - */
+.search-box,
+.result{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddbb99ed;
+    color: #6c3524;
+    border: 3px solid #6c3524;
+    outline: 2.5px dashed #763007c5;
+    outline-offset: -14px;
+    border-radius: 20px;
+    corner-shape: scoop;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 4px 4px 10px #6f4b3e;
+}
+.search-title,
+.result-title{
+    font: 55px fantasy;
+    color: #2E5A44;
+    -webkit-text-stroke: 2px antiquewhite;
+    paint-order: stroke fill;
+    text-shadow: 
+        -3px -3px 0 #2E5A44,
+        3px -3px 0 #2E5A44,   
+        -3px 3px 0 #2E5A44,
+        3px 3px 0 #2E5A44,
+        0 -3px 0 #2E5A44,
+        0 3px 0 #2E5A44,
+        -3px 0 0 #2E5A44,
+        3px 0 0 #2E5A44;
+    text-decoration: underline #2E5A44;
+    letter-spacing: 7px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.search-box input,
+.search-box select,
+.search-box button{
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 170px;
+    width: 100%;
+    background-color: #faf3e0;
+    color: #6c3524;
+    border: 2px solid #763007c5;
+    border-radius: 10px;
+    padding: 6px;
+}
+.search-box input:hover,
+.search-box select:hover{
+    background-color: #fff1cf;
+    transition: 1s;
+}
+.team{
+    margin-right: 10px;
+}
+.search-box button{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 2.5px solid #763007c5;
+    margin: 5px 10px;
+}
+.search-box button:hover{
+    background-color: #6c3524;
+    color: #fff1cf;
+    border: 2.5px solid #6c3524;
+    border-radius: 10px;
+    transition: 1s;
+}
+.search-label-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 36px;
+    min-width: 7em;
+    text-align: center;
+    background-color: #6c3524;
+    color: #faf3e0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    padding: 3px;    
+    margin: 10px 20px 10px auto;
+    vertical-align: middle;
+}
+.search-box input[type="date"],
+.search-box select{
+    box-sizing: border-box;
+    height: 36px;
+    padding: 0 12px;
+    vertical-align: middle;
+}
+
+.factor{
+    flex: 3;
+    text-align: left;
+    font-size: 10px;
+}
+
+#temp{
+    width: 50px;
+}
+
+.result{
+    flex: 7;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.predict{
+    font-size: 24px;
+}

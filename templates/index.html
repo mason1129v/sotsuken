@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREdict BALL - index</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="title-gp">
+            <p class="title">－ PREdict BALL ー</p>
+            <p class="title-sub">プレーボール‐台湾プロ野球の観客動員数予測システム</p>
+        </div>
+
+        <div class="search-box">
+            <p class="search-title">ー GAME SEARCH ー</p>
+            <form action="get_send" method="GET">
+                <div class="factor">
+                    <p>
+                        <span class="search-label-badge">試合日</span>
+                        <input type="date" name="date" id="date" required>
+                    </p>
+                    <p>
+                        <span class="search-label-badge">球場</span>
+                        <select name="ballpark" id="ballpark">
+                            <option>選択してください</option>
+                            <option>台北ドーム</option>
+                            <option>楽天桃園野球場</option>
+                            <option>天母野球場</option>
+                            <option>新荘野球場</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span class="search-label-badge">対戦チーム</span>
+                        <select name="visitor" class="team">
+                            <option>-- ビジター --</option>
+                            <option>統一7－11ライオンズ</option>
+                            <option>中信兄弟</option>
+                            <option>楽天モンキーズ</option>
+                            <option>富邦ガーディアンズ</option>
+                            <option>味全ドラゴンズ</option>
+                            <option>台鋼ホークス</option>
+                        </select>
+                        <select name="home" class="team">
+                            <option>-- ホーム --</option>
+                            <option>統一7－11ライオンズ</option>
+                            <option>中信兄弟</option>
+                            <option>楽天モンキーズ</option>
+                            <option>富邦ガーディアンズ</option>
+                            <option>味全ドラゴンズ</option>
+                            <option>台鋼ホークス</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span class="search-label-badge">イベント</span>
+                        <select name="event" id="event">
+                            <option>なし</option>
+                            <option>ゲスト</option>
+                            <option>セレモニー</option>
+                            <option>コラボ企画</option>
+                            <option>大型コンサート</option>
+                        </select>
+                    </p>
+                </div>
+                <button type="submit">予測する</button><button type="reset">条件クリア</button>
+            </form>
+        </div>
+            <div class="result">
+                <div class="result-title">ー RESULT ー</div>
+                <p>2026/10/01 17:05 晴れ（25°C）</p>
+                <p>楽天桃園野球場 （座席数：18000）</p>
+                <p>中信兄弟-楽天モンキーズ戦</p>
+                <p class="predict">予測観客数：9000人（±1000人）</p>
+                <p class="predict">予測座席稼働率：50%</p>
+            </div>        
+    </main>
+</body>
+</html>
